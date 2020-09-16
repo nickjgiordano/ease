@@ -1,0 +1,211 @@
+html {
+	height: 100%;
+	box-sizing: border-box;
+	overflow-y: scroll;
+	overflow: -moz-scrollbars-vertical;
+}
+*, *:before, *:after {box-sizing: inherit;}
+body {
+	margin: 0px;
+	background-image: url('images/bg.png');
+	font-family: Franklin Gothic Book, Droid Sans, Calibri, Tahoma, Arial, Serif;
+	position: relative;
+	min-height: 100%;
+}
+a:link, a:visited {
+	color: inherit;
+	text-decoration: inherit;
+}
+.footer{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	line-height: 50px;
+	box-shadow: 2px 1px 5px 0px black;
+	color: white;
+	border-top: 2px solid #333333;
+	background-color: black;
+	text-align: center;
+}
+.top {
+	box-shadow: 2px 1px 5px 0px black;
+	color: white;
+	border-bottom: 2px solid #333333;
+	background-color: black;
+	text-align: center;
+}
+.top_info {
+	margin: auto;
+	max-width: 1200px;
+	line-height: 50px;
+}
+.left, .right {
+	display: inline-block;
+	width: 50%;
+	position: relative;
+	z-index: 1;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.left{text-align: left;}
+.right {text-align: right;}
+.logo {
+	text-align: center;
+	-webkit-user-select: none;
+	position: relative;
+	top: -80px;
+	z-index: 1;
+}
+.logo img {
+	position: relative;
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+.logo a {outline: none;}
+.social {
+	position: absolute;
+	left: 15px;
+	top: 42px;
+	z-index: 1;
+	background-color: black;
+	border-radius: 7px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	-webkit-user-select: none;
+	outline: none;
+	z-index: 3;
+	box-shadow: 2px 1px 5px 0px black;
+	border: 2px dashed white;
+}
+.social img {
+	width: 24px;
+	padding: 3px;
+}
+.menu {
+	text-align: center;
+	position: relative;
+	z-index: 2;
+	top: -126px;
+}
+.menu_item, .menu_item_selected {
+	display: inline-block;
+	width: 120px;
+	border-radius: 7px;
+	line-height: 36px;
+	box-shadow: 2px 1px 5px 0px black;
+	color: white;
+	border: 2px solid white;
+	background-color: black;
+	margin-top: 10px;
+	font-family: Franklin Gothic Book;
+	font-size: 11pt;
+}
+.menu_item:hover, .menu_item_selected {
+	color: white;
+	border: 2px solid #9f40bf;
+}
+.content_wrapper {
+	text-align: center;
+	position: relative;
+	top: -114px;
+}
+.content {
+	max-width: 640px;
+	text-align: left;
+	display: inline-block;
+	background-color: white;
+	border-radius: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 40px;
+	box-shadow: 3px 2px 8px 0px black;
+	font-size: 11pt;
+	border-left: 6px solid #b366cc;
+	border-right: 6px solid #b366cc;
+}
+.separator {
+	display: inline-block;
+	width: 15px;
+}
+.data {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+	border-radius: 10px;
+	background-color: #b366cc;
+	box-shadow: 3px 2px 8px 0px black;
+	top: -135px;
+}
+.radius_top {
+	height: 10px;
+	-webkit-user-select: none;
+}
+.radius_bottom {
+	line-height: 10px;
+	-webkit-user-select: none;
+}
+.empty_row {
+	line-height: 2px;
+	-webkit-user-select: none;
+	background-color: black;
+}
+.filter td {text-align: center;}
+.filter, .filter select {background-color: #d9b3e6;}
+.filter select {
+	height: 30px;
+	font-family: Franklin Gothic Book;
+	font-weight: bold;
+	border: 0px;
+	outline: none;
+	cursor: pointer;
+	-moz-appearance: none;
+	text-align: center;
+}
+.sort td {
+	background-color: black;
+	color: #ecd9f2;
+	text-align: center;
+	-webkit-user-select: none;
+}
+.row:nth-child(odd) {background-color: #f0e2f5;}
+.row:nth-child(even) {background-color: white;}
+.row:hover {
+	background-color: #9f40bf;
+	color: white;
+}
+.cell {
+	padding: 10px;
+	padding-top: 6px;
+	padding-bottom:6px;
+	font-size: 10pt;
+}
+.column, .col_right, .col_yes, .col_no {cursor: pointer;}
+.col_right {text-align: right;}
+.col_yes {
+	text-align: center;
+	color: #29a329;
+}
+.col_no {
+	text-align: center;
+	color: #cc3333;
+}
+.table_footer td {
+	background-color: #d9b3e6;
+	height: 40px;
+}
+.table_info {
+	font-weight: bold;
+	font-size: 10pt;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+}
+.table_footer span {color: #993380;}
+.clear:link, .clear:visited {color: #cc2200;}
+.clear:hover, .clear:visited:hover {text-decoration: underline;}
+.clear_x {color: #ff8066;}
